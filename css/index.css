@@ -197,7 +197,6 @@ nav {
     height: 50%;
     flex-direction: column;
     align-items: center;
-    border: 1px solid purple;
   }
 }
 
@@ -213,6 +212,9 @@ nav a {
     color: grey;
     font-size: 20px;
     border-bottom: 1px solid black;
+    padding: 15px;
+    width: 500px;
+    text-align: center;
   }
 }
 
@@ -295,8 +297,7 @@ header h1 {
 /* mobile styling */
 @media (max-width: 500px) {
   .logo {
-      display: flex;
-      align-items: flex-start;
+      display: block;
   }
 }
 
@@ -336,6 +337,7 @@ header h1 {
 @media (max-width: 500px) {
 .top-container {
   width: 60%;
+  margin: 0px 0px 40px 0px;
 }
 }
 
@@ -356,7 +358,7 @@ header h1 {
 /* mobile styling */
 @media (max-width: 500px) {
   .middle-img {
-      width: 480px;
+      width: 500px;
       box-align: center;
       margin: 20px 0;
   }
@@ -393,6 +395,7 @@ header h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0px 0px 40px 0px;
   }
 }
 
