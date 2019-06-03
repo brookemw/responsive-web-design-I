@@ -160,7 +160,6 @@ body {
 @media (max-width: 800px) {
   body {
       width: 800px;
-      margin: 0 auto;    
     }
   }
 
@@ -168,7 +167,6 @@ body {
 @media (max-width: 500px) {
   body {
       width: 500px;
-      margin: 0 auto;
   }
 }
 
