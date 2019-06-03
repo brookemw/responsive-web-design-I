@@ -1,3 +1,410 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  body {
+      width: 800px;
+      margin: 0 auto;    
+    }
+  }
+
+/* mobile styling */
+@media (max-width: 500px) {
+  body {
+      width: 500px;
+      margin: 0 auto;
+  }
+}
+
+nav {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;  }
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid purple;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+  nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  align-items: center;
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  align-items: center;
+}
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  header img {
+      display: none;
+  }
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+  header img {
+      display: none;
+  }
+}
+
+header .left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  header .left-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+header h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.button {
+  width: 50%;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
+
+.divider {
+  border-top: 2px solid black;
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  .logo {
+      display: none;
+  }
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+  .logo {
+      display: flex;
+      align-items: flex-start;
+  }
+}
+
+.middle {
+  margin: 30px 0;
+}
+
+.middle-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+  .middle-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  .middle-top {
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+    margin-bottom: 20px;
+  }
+}
+
+.top-container {
+  width: 40%;
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+.top-container {
+  width: 60%;
+}
+}
+
+.middle-img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  .middle-img {
+      width: 800px;
+      box-align: center;
+     
+  }
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+  .middle-img {
+      width: 480px;
+      box-align: center;
+      margin: 20px 0;
+  }
+}
+
+.middle-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-bottom: 20px;
+}
+
+/* tablet styling */
+@media (max-width: 800px) {
+  .middle-bottom {
+      display: flex;
+      justify-content: space-around;
+      width: 750px;
+      margin-bottom: 20px;
+  }
+}
+
+/* mobile styling */
+@media (max-width: 500px) {
+ .middle-bottom {
+   display: flex;
+   flex-direction: column;
+ }
+
+
+/* mobile styling */
+@media (max-width: 500px) {
+  .bottom-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.bottom-container {
+  width: 60%;
+}
+
+.contact {
+  margin: 30px 0;
+}
+
+footer {
+  text-align: center;
+}
 
