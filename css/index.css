@@ -193,7 +193,7 @@ nav {
   nav {
     display: flex;
     height: 50%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 }
@@ -215,6 +215,16 @@ nav a {
     text-align: center;
   }
 }
+
+/* mobile styling */
+/*
+@media (max-width: 500px) {
+  nav a:nth-last-child(2) {
+    border-bottom: none;
+   
+  }
+}
+*/
 
 header {
   display: flex;
@@ -335,7 +345,7 @@ header h1 {
 @media (max-width: 500px) {
 .top-container {
   width: 60%;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 20px 40px 20px;
 }
 }
 
@@ -393,7 +403,7 @@ header h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 20px 40px 20px;
   }
 }
 
@@ -402,10 +412,12 @@ header h1 {
 }
 
 .contact {
-  margin: 30px 0;
+  margin: 30px 0px 0px 20px;
 }
 
 footer {
+  display: block;
   text-align: center;
+  margin: 40px 0;
 }
 
